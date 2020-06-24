@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: "Manticore";
+    src: url("/fonts/Manticore/Manticore.eot") format("eot");
+    src: url("/fonts/Manticore/styles.css"), url("/fonts/Manticore/Manticore.woff") format("woff"),
+        url("/fonts/Manticore/Manticore.ttf") format("ttf"), url("/fonts/Manticore/Manticore.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Made";
+    src: url("/fonts/made/MADEOuterSans-Black.eot") format("eot");
+    src: url("/fonts/made/styles.css"), url("/fonts/made/MADEOuterSans-Black.woff") format("woff"),
+        url("/fonts/made/MADEOuterSans-Black.ttf") format("ttf"),
+        url("/fonts/made/MADEOuterSans-Black.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Made";
+    src: url("/fonts/made/MADEOuterSans-Thin.eot") format("eot");
+    src: url("/fonts/made/styles.css"), url("/fonts/made/MADEOuterSans-Thin.woff") format("woff"),
+        url("/fonts/made/MADEOuterSans-Thin.ttf") format("ttf"), url("/fonts/made/MADEOuterSans-Thin.svg") format("svg");
+    font-weight: thin;
+    font-style: normal;
+}
+
+/* header */
+
+#menu {
+    display: inline-flex;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    color: #f7f5f9;
+    list-style: none;
+    line-height: 18px;
+}
+
+/* menu burger */
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 65px;
+    width: 60px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.menu__btn > span::before {
+    content: "";
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: "";
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 150px;
+    height: 100%;
+    margin: 0 0 0 10px;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #c1c8cc;
+    opacity: 0.5;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #cfd8dc;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+/* end menu burger */
+
+/* menu && logo */
+
+.indent {
+    margin: 24px 59px 63px 66px;
+}
+
+.lindent {
+    padding-left: 30px;
+}
+
+.m-in-s {
+    margin-inline-start: 61px;
+}
+
+/* .vector {
+    margin-left: -23px;
+} */
+
+.logo {
+    padding-left: 398px;
+    padding-right: 384px;
+    font-family: "Manticore";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.font {
+    font-family: "Made";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* end menu && logo */
+
+/* room */
+.hero {
+    display: flex;
+    height: 100vh;
+    margin: 60px;
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+.hero__item {
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    background: center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.6);
+    transition: flex-basis 0.3s;
+}
+.hero__item:hover {
+    flex-basis: 100%;
+}
+/* end room */
+
+/* action */
+
+.span-block {
+    margin-top: 620px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.name {
+    font-family: "Made";
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+}
+
+.genre {
+    padding-top: 60px;
+    font-family: "Made";
+    font-weight: 100;
+}
+
+/* end action */
+
+/* sale */
+
+.sale {
+    width: 369px;
+    height: 80px;
+    background-color: #920e0e;
+}
+
+/* end sale */
