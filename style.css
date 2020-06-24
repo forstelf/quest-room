@@ -9,28 +9,29 @@ body {
 
 @font-face {
     font-family: "Manticore";
-    src: url("/fonts/Manticore/Manticore.eot") format("eot");
-    src: url("/fonts/Manticore/styles.css"), url("/fonts/Manticore/Manticore.woff") format("woff"),
-        url("/fonts/Manticore/Manticore.ttf") format("ttf"), url("/fonts/Manticore/Manticore.svg") format("svg");
+    src: url("./fonts/Manticore/Manticore.eot") format("eot");
+    src: url("./fonts/Manticore/styles.css"), url("./fonts/Manticore/Manticore.woff") format("woff"),
+        url("./fonts/Manticore/Manticore.ttf") format("ttf"), url("./fonts/Manticore/Manticore.svg") format("svg");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Made";
-    src: url("/fonts/made/MADEOuterSans-Black.eot") format("eot");
-    src: url("/fonts/made/styles.css"), url("/fonts/made/MADEOuterSans-Black.woff") format("woff"),
-        url("/fonts/made/MADEOuterSans-Black.ttf") format("ttf"),
-        url("/fonts/made/MADEOuterSans-Black.svg") format("svg");
+    src: url("./fonts/made/MADEOuterSans-Black.eot") format("eot");
+    src: url("./fonts/made/styles.css"), url("./fonts/made/MADEOuterSans-Black.woff") format("woff"),
+        url("./fonts/made/MADEOuterSans-Black.ttf") format("ttf"),
+        url("./fonts/made/MADEOuterSans-Black.svg") format("svg");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Made";
-    src: url("/fonts/made/MADEOuterSans-Thin.eot") format("eot");
-    src: url("/fonts/made/styles.css"), url("/fonts/made/MADEOuterSans-Thin.woff") format("woff"),
-        url("/fonts/made/MADEOuterSans-Thin.ttf") format("ttf"), url("/fonts/made/MADEOuterSans-Thin.svg") format("svg");
+    src: url("./fonts/made/MADEOuterSans-Thin.eot") format("eot");
+    src: url("./fonts/made/styles.css"), url("./fonts/made/MADEOuterSans-Thin.woff") format("woff"),
+        url("./fonts/made/MADEOuterSans-Thin.ttf") format("ttf"),
+        url("./fonts/made/MADEOuterSans-Thin.svg") format("svg");
     font-weight: thin;
     font-style: normal;
 }
